@@ -1,0 +1,54 @@
+TOKEN=
+
+# the channel you want MailmanBot to display new emails in
+DEFAULT_CHANNEL=
+
+# define what character will be used to summon bot commands
+COMMAND_PREFIX=!
+
+# interval of time between two checks for new emails
+LOOP_TIME=1
+
+# sentence displayed on "on_ready" event
+GREETINGS_SENTENCE=Que le jeu du facteur commence ...
+# sentence displayed when MailmanBot found a new email
+NEW_EMAIL_SENTENCE=@----- L3 ----- Le facteur est passé !
+# sentence displayed when no emails were found
+NO_EMAIL_SENTENCE="Le facteur n'est pas passé :cry:"
+
+# format you want the date displayed in
+# for more information on the different formats please visit :
+# https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior
+DATE_DISPLAY_FORMAT=%A %d %B %Y à %H:%M:%S
+# define the local language for displaying the date
+LOCAL_TIME=fr_FR.UTF-8
+
+# format you want the email's details to be displayed in
+EMAIL_DISPLAY_FORMAT="```\n REÇU LE: {}\n DE: {}\n SUJET: {}\n\n {} \n```"
+
+HELP="
+**MailmanBot v1.0**
+
+MailmanBot se charge de relever les emails envoyés à l3info@listes.univ-rouen.fr et de les afficher dans le chat.
+
+__Instructions:__
+`!last`:    Affiche le dernier email reçu.
+`!mail`:    Relève le courrier.
+
+
+Find me on GitHub: https://github.com/EdouardRouch/MailmanBot !
+Made with :hearts: by Edouard Rouch"
+
+
+# credentials for IMAP login
+IMAP_HOST=
+IMAP_USER=
+IMAP_PASS=
+
+# mailbox you want to look for emails in
+IMAP_MAILBOX=INBOX
+
+# criterions for IMAP4_SSL.search() function
+# for more information about the criterion format please visit:
+# https://datatracker.ietf.org/doc/html/rfc3501#section-6.4.4
+IMAP_CRIT='(TO "test@test.com") (UNSEEN)'
